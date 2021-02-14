@@ -15,7 +15,8 @@ const windowsOS = {
 const linuxOS = {
   linux: {
     icon: ICONS_DIR,
-    target: 'deb'
+    // target: ['deb', 'AppImage']
+    target: ['AppImage']
   }
 }
 
@@ -43,9 +44,9 @@ const macOS = {
 
 module.exports = {
   asar: false,
-  productName: 'My browser',
-  appId: 'org.michalzarach.my-browser',
-  artifactName: 'my-browser-${version}.${ext}',
+  productName: 'rChat',
+  appId: 'org.rai.rChat',
+  artifactName: 'rChat-${version}.${ext}',
   directories: {
     output: 'build'
   },
